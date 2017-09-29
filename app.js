@@ -15,10 +15,14 @@ router.use(function (req,res,next) {
     next();
 });
 
+router.get("/", function(req, res){
+    res.render("index");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){
-    res.render("404");
+    res.status("404").render("404");
 });
 
 app.listen(PORT,function(){
