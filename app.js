@@ -4,7 +4,6 @@ var router = express.Router();
 
 var config = require(__dirname + '/config.js');
 app.use(express.static(__dirname + '/public'));
-var path = __dirname + '/public/views/';
 
 var PORT = config.express.port;
 
