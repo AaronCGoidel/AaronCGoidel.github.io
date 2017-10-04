@@ -42,7 +42,7 @@
         build: function(){
             var self = this;
             if(this.showCursor === true){
-                this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                this.cursor = $("<span class=\"cursor\">" + this.cursorChar + "</span>");
                 this.el.after(this.cursor);
             }
             if(this.stringsElement){
@@ -79,7 +79,7 @@
                 }
 
                 if(self.contentType === 'html'){
-                    var curChar = curString.substr(curStrPos).charAt(0)
+                    var curChar = curString.substr(curStrPos).charAt(0);
                     if(curChar === '<' || curChar === '&'){
                         var tag = '';
                         var endTag = '';
@@ -105,9 +105,9 @@
                             self.backspace(curString, curStrPos);
                         }, self.backDelay);
                     }else{
-
-                        if(curStrPos === 0)
+                        if(curStrPos === 0){
                             self.options.preStringtextCycle(self.arrayPos);
+                        }
 
                         var nextString = curString.substr(0, curStrPos + 1);
                         if(self.attr){
@@ -126,9 +126,7 @@
                         self.typewrite(curString, curStrPos);
                     }
                 }, charPause);
-
             }, humanize);
-
         },
         backspace: function(curString, curStrPos){
             if(this.stop === true){
@@ -168,22 +166,17 @@
                 if(curStrPos > self.stopNum){
                     curStrPos--;
                     self.backspace(curString, curStrPos);
-                }
-                else if(curStrPos <= self.stopNum){
+                }else if(curStrPos <= self.stopNum){
                     self.arrayPos++;
-
                     if(self.arrayPos === self.strings.length){
                         self.arrayPos = 0;
-
                         if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
-
                         self.init();
-                    }else
+                    }else{
                         self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+                    }
                 }
-
             }, humanize);
-
         },
         shuffleArray: function(array){
             var tmp, current, top = array.length;
@@ -195,20 +188,7 @@
                     array[top] = tmp;
                 }
             return array;
-        },
-
-        reset: function(){
-            var self = this;
-            clearInterval(self.timeout);
-            var id = this.el.attr('id');
-            this.el.after('<span id="' + id + '"/>')
-            this.el.remove();
-            if(typeof this.cursor !== 'undefined'){
-                this.cursor.remove();
-            }
-            self.options.resetCallback();
         }
-
     };
 
     $.fn.typed = function(option){
@@ -239,8 +219,6 @@ function handleTyping(){
         preStringtextCycle: function(){
         },
         onStringtextCycle: function(){
-        },
-        resetCallback: function(){
         }
     });
 }
