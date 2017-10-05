@@ -5,14 +5,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-    #menu-button {
-        font-size: 14px;
-        left: 2.5em;
-        position: fixed;
-        top: 2.5em;
-        z-index: 2;
-    }
-
     #cover h1 p {
         font-size: 42px;
         font-weight: 400;
@@ -22,14 +14,6 @@ body {
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-    #menu-button {
-        font-size: 12px;
-        left: 2.5em;
-        position: fixed;
-        top: 2.5em;
-        z-index: 2;
-    }
-
     #cover h1 p {
         font-size: 38px;
         font-weight: 400;
@@ -39,14 +23,6 @@ body {
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-    #menu-button {
-        font-size: 10px;
-        left: 2.5em;
-        position: fixed;
-        top: 2.5em;
-        z-index: 2;
-    }
-
     #cover h1 p {
         font-size: 30px;
         font-weight: 400;
