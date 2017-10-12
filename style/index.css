@@ -115,12 +115,12 @@ body {
 }
 
 a {
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
 .link-effect a {
-    color: #797878;
+    color: #F6F7EB;
     margin: 0 20px;
     padding: 10px 0;
     position: relative;
@@ -133,7 +133,7 @@ a {
 .link-effect a::after {
     height: 2px;
     width: 100%;
-    background: white;
+    background: #F6F7EB;
     content: "";
     position: absolute;
     left: 0px;
@@ -153,3 +153,5 @@ a {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+
