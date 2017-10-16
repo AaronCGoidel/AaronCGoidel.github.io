@@ -1,0 +1,93 @@
+
+#item-group {
+    width: 90%;
+    margin: 0 auto;
+}
+#item-group .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+}
+#item-group .header .btn-group {
+    background: #efefef;
+}
+#item-group .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#item-group .row .item {
+    width: 40%;
+    padding: 5%;
+    padding-bottom: calc(5% + 10px);
+    margin: auto;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#item-group .row .item:nth-of-type(1) {
+    border-right: 1px solid #efefef;
+}
+#item-group .row .item a {
+    text-decoration: none;
+    border-bottom: 1px dotted #292929;
+    color: #292929;
+}
+#item-group .row .item {
+    border-bottom: none;
+    color: #434343;
+}
+#item-group .row .item a.btn {
+    border: 1px solid #292929;
+    border-bottom-width: 2px;
+    padding: 8px;
+    border-radius: 4px;
+}
+#item-group .row .item {
+    color: #4f4f4f;
+    border-color: #4f4f4f;
+    border-bottom-width: 1px;
+    position: relative;
+    top: 1px;
+}
+@media (max-width: 600px) {
+    #item-group .row .item {
+        width: 45%;
+        padding: 2.5%;
+        padding-bottom: calc(2.5% + 10px);
+    }
+}
+#item-group.grid .row {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+#item-group.list .row {
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    border: none;
+}
+#item-group.list .row .item {
+    width: 50%;
+    padding: 5% 0;
+    padding-bottom: calc(5% + 10px);
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+}
+@media (max-width: 600px) {
+    #item-group.list .row .item {
+        width: 100%;
+        padding: 2.5%;
+        padding-bottom: calc(2.5% + 10px);
+    }
+}
