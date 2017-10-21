@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(#ebece7, white);
+    background: linear-gradient(#ebece7, white);
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: inherit;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   p {
+
+   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    p {
+        font-size: 80px;
+        letter-spacing: -5px;
+        line-height: 60px;
+    }
+}
+
+.container {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.title {
+    font-weight: 800;
+    color: transparent;
+    font-size: 120px;
+    background: url("http://i.imgur.com/bGd0jEz.jpg");
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    letter-spacing: -8px;
+}
