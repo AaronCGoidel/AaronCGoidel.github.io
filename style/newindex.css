@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    background: -webkit-linear-gradient(#ebece7, white);
-    background: linear-gradient(#ebece7, white);
+    background: -webkit-linear-gradient(#fcfdf8, white);
+    background: linear-gradient(#fcfdf8, white);
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
@@ -43,12 +43,12 @@ body {
 .title {
     font-weight: 800;
     color: transparent;
-    font-size: 120px;
+    font-size: 150px;
     background: url("http://i.imgur.com/bGd0jEz.jpg");
     background-position: 40% 50%;
     -webkit-background-clip: text;
     position: relative;
     text-align: center;
-    line-height: 90px;
+    line-height: 115px;
     letter-spacing: -8px;
 }
