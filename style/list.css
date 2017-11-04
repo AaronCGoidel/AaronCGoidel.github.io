@@ -25,6 +25,12 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+.title {
+    font-size: 34pt;
+    color: #434343;
+    margin: 15px;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -34,7 +40,9 @@
 #item-group .row .item {
     padding-bottom: calc(5% + 10px);
     margin: auto;
-
+    margin-right: 10px;
+    margin-top: 10px;
+    max-width: 92%;
 }
 
 #item-group .row .item a {
