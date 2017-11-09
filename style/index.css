@@ -10,6 +10,7 @@ body {
     --color-dark: #39393A;
     --color-accent: #0FA3B1;
     --color-light: #F6F7EB;
+    --color-white: #fbfbfb;
 }
 
 @media (min-width: 1024px) {
@@ -164,6 +165,8 @@ a {
 
 .about {
     height: 100vh;
-    background-color: var(--color-light);
+    padding: 10vh;
+    text-align: center;
+    background-color: var(--color-white);
     color: var(--color-dark);
 }
