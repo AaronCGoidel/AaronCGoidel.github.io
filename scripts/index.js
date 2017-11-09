@@ -204,7 +204,7 @@
 
 function handleTyping(){
     $(".identifier").typed({
-        strings: ["a programmer.", "a chef.", "a writer.", "a musician.", "a creator."],
+        strings: ["a programmer.", "a writer.", "a musician.", "a creator."],
         stringsElement: null,
         typeSpeed: 50,
         startDelay: 200,

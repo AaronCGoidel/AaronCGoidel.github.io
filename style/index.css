@@ -2,6 +2,14 @@ html,
 body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-dark: #39393A;
+    --color-accent: #0FA3B1;
+    --color-light: #F6F7EB;
 }
 
 @media (min-width: 1024px) {
@@ -58,15 +66,15 @@ body {
 }
 
 .light-font {
-    color: #F6F7EB;
+    color: var(--color-light);
 }
 
 .cover-background {
-    background-color: #39393A;
+    background-color: var(--color-dark);
 }
 
 .accent-text {
-    color: #0FA3B1 !important;
+    color: var(--color-accent) !important;
 }
 
 * {
@@ -120,7 +128,7 @@ a {
 }
 
 .link-effect a {
-    color: #F6F7EB;
+    color: var(--color-light);
     margin: 0 20px;
     padding: 10px 0;
     position: relative;
@@ -133,7 +141,7 @@ a {
 .link-effect a::after {
     height: 2px;
     width: 100%;
-    background: #F6F7EB;
+    background: var(--color-light);
     content: "";
     position: absolute;
     left: 0px;
@@ -154,4 +162,8 @@ a {
     transform: scaleX(1);
 }
 
-
+.about {
+    height: 100vh;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
