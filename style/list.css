@@ -33,14 +33,8 @@ body {
 }
 
 .header {
-    margin: -15px;
+    height: 10vh;
     background-color: #434343;
-}
-
-.title {
-    font-size: 34pt;
-    color: #434343;
-    margin: 15px;
 }
 
 .row::after {
