@@ -170,3 +170,26 @@ a {
     background-color: var(--color-white);
     color: var(--color-dark);
 }
+
+.slant-container {
+    padding: 10%;
+    padding-top: 100px;
+    background: var(--color-accent);
+    position: relative;
+    color: var(--color-white);
+}
+
+.slant-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100px;
+    background: var(--color-accent);
+    transform: skewY(-3.5deg);
+}
+
+.projects {
+    height: 100vh;
+}
