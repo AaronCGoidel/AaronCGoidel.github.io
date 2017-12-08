@@ -120,7 +120,7 @@ a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-.link-effect a:hover::after {
+.link-effect a:hover::after, .link-effect a:focus::after {
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -webkit-transform: scaleX(1);
