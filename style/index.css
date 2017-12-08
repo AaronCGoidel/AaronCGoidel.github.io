@@ -13,41 +13,6 @@ body {
     --color-white: #fbfbfb;
 }
 
-@media (min-width: 1024px) {
-    #cover h1 p {
-        font-size: 42px;
-        font-weight: 400;
-    }
-    #cover h1 strong {
-        font-size: 46px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    #cover h1 p {
-        font-size: 38px;
-        font-weight: 400;
-    }
-    #cover h1 strong {
-        font-size: 42px;
-    }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-    #cover h1 p {
-        font-size: 30px;
-        font-weight: 400;
-    }
-    #cover h1 strong {
-        font-size: 34px;
-    }
-
-    #contact button {
-        font-size: .7em;
-    }
-    #contact p {
-        font-size: .7em;
-    }
-}
-
 .center {
     left: 50%;
     position: relative;
@@ -282,6 +247,7 @@ a {
     color: #737373;
     font-size: 48px;
     transition: color 150ms ease-in-out, font-size .2s ease-in-out;
+
 }
 
 .live {
@@ -298,4 +264,42 @@ a {
 .inset {
     padding: 8px 10px 10px;
     font-size: 12pt;
+}
+
+@media (min-width: 1024px) {
+    #cover h1 p {
+        font-size: 42px;
+        font-weight: 400;
+    }
+    #cover h1 strong {
+        font-size: 46px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #cover h1 p {
+        font-size: 38px;
+        font-weight: 400;
+    }
+    #cover h1 strong {
+        font-size: 42px;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    #cover h1 p {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    #cover h1 strong {
+        font-size: 34px;
+    }
+
+    #contact button {
+        font-size: .7em;
+    }
+    #contact p {
+        font-size: .7em;
+    }
+    .flip-container {
+        width: 100%;
+    }
 }
