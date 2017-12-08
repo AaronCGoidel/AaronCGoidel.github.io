@@ -132,7 +132,6 @@ a {
     text-align: center;
     background-color: var(--color-white);
     color: var(--color-dark);
-    margin-bottom: -226px;
 }
 
 .about.slant-container, .about.slant-container:before {
