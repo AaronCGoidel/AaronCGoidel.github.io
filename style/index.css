@@ -222,6 +222,7 @@ h1 {
     transition: 0.6s;
     transform-style: preserve-3d;
     min-height: inherit;
+    box-shadow: 0 3px 15px rgba(0,0,0,.1);
 }
 
 .front, .back {
