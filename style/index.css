@@ -241,24 +241,23 @@ a {
     line-height: 120px;
     font-size: 36px;
     color: #444;
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
 }
 
 .icon-link.fill.github:hover .fa-github {
     color: #737373;
     font-size: 48px;
-    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
-
 }
 
 .live {
     text-decoration: none;
     color: var(--color-dark);
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
 }
 
 .live:hover {
     color: #737373;
     font-size: 34px;
-    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
 }
 
 .inset {
