@@ -21,23 +21,18 @@ body {
     text-align: center;
 }
 
-.fluid {
+.cover {
+    background-color: var(--color-dark);
     min-height: 100%;
     padding: 0;
+    height: 100vh;
 }
 
-.fill {
-    height: 100%;
-    min-height: 100%;
-}
 
 .light-font {
     color: var(--color-light);
 }
 
-.cover-background {
-    background-color: var(--color-dark);
-}
 
 .accent-text {
     color: var(--color-accent) !important;
@@ -138,6 +133,16 @@ a {
     text-align: center;
     background-color: var(--color-white);
     color: var(--color-dark);
+    margin-bottom: -226px;
+}
+
+.about.slant-container, .about.slant-container:before {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.about.slant-container:before {
+    transform: skewY(3.5deg);
 }
 
 .projects {
@@ -178,18 +183,6 @@ a {
     align-content: flex-start;
     align-items: flex-start;
 }
-
-/*.project {*/
-    /*padding: 20px;*/
-    /*font-size: 14pt;*/
-    /*color: var(--color-dark);*/
-    /*width: 30%;*/
-    /*min-width: 200px;*/
-    /*max-width: 300px;*/
-    /*max-height: 30%;*/
-    /*background-color: var(--color-white);*/
-    /*margin: 10px;*/
-/*}*/
 
 .flip-container {
     position: relative;
