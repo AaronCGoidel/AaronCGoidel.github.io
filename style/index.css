@@ -297,6 +297,9 @@ h1 {
     #cover h1 strong {
         font-size: 42px;
     }
+    #about p {
+        font-size: 1em;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) {
     #cover h1 p {
@@ -315,6 +318,9 @@ h1 {
     }
     .flip-container {
         width: 100%;
+    }
+    #about p {
+        font-size: .9em;
     }
 }
 footer{
