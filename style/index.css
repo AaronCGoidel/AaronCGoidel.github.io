@@ -78,6 +78,10 @@ body {
     color: var(--color-accent) !important;
 }
 
+.dark-text {
+    color: var(--color-dark);
+}
+
 * {
     margin: 0;
 }
@@ -210,16 +214,88 @@ a {
     align-items: flex-start;
 }
 
-.project {
-    padding: 20px;
-    font-size: 14pt;
-    color: var(--color-dark);
-    width: 30%;
+/*.project {*/
+    /*padding: 20px;*/
+    /*font-size: 14pt;*/
+    /*color: var(--color-dark);*/
+    /*width: 30%;*/
+    /*min-width: 200px;*/
+    /*max-width: 300px;*/
+    /*max-height: 30%;*/
+    /*background-color: var(--color-white);*/
+    /*margin: 10px;*/
+/*}*/
+
+.flip-container {
+    position: relative;
+    margin: 10px 5px;
+    width: 35%;
     min-width: 200px;
     max-width: 300px;
-    max-height: 30%;
-    background-color: var(--color-white);
-    margin: 10px;
+    min-height: 120px;
+    perspective: 1000px;
 }
 
+.flip-container:hover .project, .flip-container.hover .project {
+    transform: rotateY(180deg);
+}
 
+.project {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    min-height: inherit;
+}
+
+.front, .back {
+    color: var(--color-dark);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    font-size: 25pt;
+    transform: rotateY(180deg);
+}
+
+.title {
+    padding-top: 10px;
+}
+
+.icon-link .fa {
+    vertical-align: middle;
+    line-height: 120px;
+    font-size: 36px;
+    color: #444;
+}
+
+.icon-link.fill.github:hover .fa-github {
+    color: #737373;
+    font-size: 48px;
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
+}
+
+.live {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.live:hover {
+    color: #737373;
+    font-size: 34px;
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out;
+}
+
+.inset {
+    padding: 8px 10px 10px;
+    font-size: 12pt;
+}
