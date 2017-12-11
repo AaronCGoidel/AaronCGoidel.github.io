@@ -128,7 +128,7 @@ h1 {
     text-align: center;
 }
 .about {
-    height: 60vh;
+    max-height: 80vh;
     padding: 10vh;
     background-color: var(--color-white);
     color: var(--color-dark);
@@ -137,6 +137,7 @@ h1 {
 .about.slant-container, .about.slant-container:before {
     background-color: var(--color-white);
     color: var(--color-dark);
+    margin-bottom: 25px;
 }
 
 .about.slant-container:before {
@@ -192,7 +193,6 @@ h1 {
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
@@ -332,6 +332,6 @@ footer{
 }
 
 .regular {
-    padding-top: 50px;
+    padding-top: 25px;
     font-size: 16pt;
 }
