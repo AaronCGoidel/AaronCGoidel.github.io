@@ -269,8 +269,17 @@ h1 {
     transition:color 150ms ease-in-out,font-size .2s ease-in-out
 }
 
+.icon-link .light {
+    color: var(--color-light);
+}
+
 .icon-link.fill.github:hover .fa-github {
     color:#737373;
+    font-size:48px
+}
+
+.icon-link.fill.github:hover .light {
+    color: var(--color-light);
     font-size:48px
 }
 
