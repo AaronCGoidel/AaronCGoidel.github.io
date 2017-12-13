@@ -271,6 +271,7 @@ h1 {
 
 .icon-link .light {
     color: var(--color-light);
+    font-size: 30px;
 }
 
 .icon-link.fill.github:hover .fa-github {
@@ -280,7 +281,7 @@ h1 {
 
 .icon-link.fill.github:hover .light {
     color: var(--color-light);
-    font-size:48px
+    font-size:40px
 }
 
 .live {
