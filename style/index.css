@@ -235,6 +235,10 @@ h1 {
     box-shadow:0 3px 15px rgba(0,0,0,.1)
 }
 
+#projects p{
+    padding-top: 20px;
+}
+
 .front,.back {
     color:var(--color-dark);
     width:100%;
@@ -272,6 +276,7 @@ h1 {
 .icon-link .light {
     color: var(--color-light);
     font-size: 30px;
+    line-height: 30px;
 }
 
 .icon-link.fill.github:hover .fa-github {
