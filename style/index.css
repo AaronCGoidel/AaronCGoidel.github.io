@@ -23,7 +23,7 @@ html, body {
 .cover {
     background-color: var(--color-dark);
     padding: 0;
-    height: 100vh
+    height: 100vh;
 }
 
 .light-font {
@@ -141,7 +141,7 @@ h1 {
     max-height: 80vh;
     padding: 10vh;
     background-color: var(--color-white);
-    color: var(--color-dark)
+    color: var(--color-dark);
 }
 
 #about p {
@@ -376,4 +376,17 @@ footer {
 .regular {
     padding-top: 25px;
     font-size: 16pt
+}
+
+.contact {
+    padding: 10px;
+    min-height: 20vh;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.contact a{
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: underline;
 }
