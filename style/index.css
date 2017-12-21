@@ -1,276 +1,280 @@
-html,body {
-    font-family:"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-    height:100%;
-    margin:0;
-    padding:0
+html, body {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0
 }
 
 :root {
-    --color-dark:#39393A;
-    --color-accent:#0FA3B1;
-    --color-light:#F6F7EB;
-    --color-white:#fbfbfb
+    --color-dark: #39393A;
+    --color-accent: #0FA3B1;
+    --color-light: #F6F7EB;
+    --color-white: #fbfbfb
 }
 
 .center {
-    left:50%;
-    position:relative;
-    top:50%;
-    transform:translate(-50%,-50%);
-    text-align:center
+    left: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
 }
 
 .cover {
-    background-color:var(--color-dark);
-    padding:0;
-    height:100vh
+    background-color: var(--color-dark);
+    padding: 0;
+    height: 100vh
 }
 
 .light-font {
-    color:var(--color-light)
+    color: var(--color-light)
 }
 
 .accent-text {
-    color:var(--color-accent)!important
+    color: var(--color-accent) !important
 }
 
 .dark-text {
-    color:var(--color-dark)
+    color: var(--color-dark)
 }
 
 * {
-    margin:0
+    margin: 0
 }
 
 .cursor {
-    -webkit-animation:blink .7s infinite;
-    -moz-animation:blink .7s infinite;
-    animation:blink .7s infinite;
-    opacity:1
+    -webkit-animation: blink .7s infinite;
+    -moz-animation: blink .7s infinite;
+    animation: blink .7s infinite;
+    opacity: 1
 }
 
 @keyframes blink {
     0% {
-        opacity:1
+        opacity: 1
     }
 
     50% {
-        opacity:0
+        opacity: 0
     }
 
     100% {
-        opacity:1
+        opacity: 1
     }
 }
 
 @-webkit-keyframes blink {
     0% {
-        opacity:1
+        opacity: 1
     }
 
     50% {
-        opacity:0
+        opacity: 0
     }
 
     100% {
-        opacity:1
+        opacity: 1
     }
 }
 
 @-moz-keyframes blink {
     0% {
-        opacity:1
+        opacity: 1
     }
 
     50% {
-        opacity:0
+        opacity: 0
     }
 
     100% {
-        opacity:1
+        opacity: 1
     }
 }
 
 a {
-    font-size:25px;
-    text-decoration:none
+    font-size: 25px;
+    text-decoration: none
 }
 
 .link-effect a {
-    color:var(--color-light);
-    margin:0 20px;
-    padding:10px 0;
-    position:relative;
-    -moz-transition:ease-out .3s .1s;
-    -o-transition:ease-out .3s .1s;
-    -webkit-transition:ease-out .3s;
-    -webkit-transition-delay:.1s;
-    transition:ease-out .3s .1s
+    color: var(--color-light);
+    margin: 0 20px;
+    padding: 10px 0;
+    position: relative;
+    -moz-transition: ease-out .3s .1s;
+    -o-transition: ease-out .3s .1s;
+    -webkit-transition: ease-out .3s;
+    -webkit-transition-delay: .1s;
+    transition: ease-out .3s .1s
 }
 
 .link-effect a::after {
-    height:2px;
-    width:100%;
-    background:var(--color-light);
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    -moz-transform:scaleX(0);
-    -ms-transform:scaleX(0);
-    -webkit-transform:scaleX(0);
-    transform:scaleX(0);
-    -moz-transition:.3s;
-    -o-transition:.3s;
-    -webkit-transition:.3s;
-    transition:.3s
+    height: 2px;
+    width: 100%;
+    background: var(--color-light);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s
 }
 
-.link-effect a:hover::after,.link-effect a:focus::after {
-    -moz-transform:scaleX(1);
-    -ms-transform:scaleX(1);
-    -webkit-transform:scaleX(1);
-    transform:scaleX(1)
+.link-effect a:hover::after, .link-effect a:focus::after {
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
 }
 
 h1 {
-    text-align:center
+    text-align: center
 }
 
 .about {
-    max-height:80vh;
-    padding:10vh;
-    background-color:var(--color-white);
-    color:var(--color-dark)
+    max-height: 80vh;
+    padding: 10vh;
+    background-color: var(--color-white);
+    color: var(--color-dark)
 }
 
-.about.slant-container,.about.slant-container:before {
-    background-color:var(--color-white);
-    color:var(--color-dark);
-    margin-bottom:25px
+#about p {
+    padding-bottom: 40px;
+}
+
+.about.slant-container, .about.slant-container:before {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    margin-bottom: 25px
 }
 
 .about.slant-container:before {
-    transform:skewY(3.5deg)
+    transform: skewY(3.5deg)
 }
 
 .projects {
-    min-height:100vh;
-    padding:10vh;
-    text-align:center;
-    background-color:var(--color-accent);
-    color:var(--color-white)
+    min-height: 100vh;
+    padding: 10vh;
+    text-align: center;
+    background-color: var(--color-accent);
+    color: var(--color-white)
 }
 
 .slant-container {
     padding: 100px 10% 10%;
-    background:var(--color-accent);
-    position:relative;
-    color:var(--color-white)
+    background: var(--color-accent);
+    position: relative;
+    color: var(--color-white)
 }
 
 .slant-container:before {
-    content:'';
-    position:absolute;
-    left:0;
-    top:-40px;
-    width:100%;
-    height:100px;
-    background:var(--color-accent);
-    transform:skewY(-3.5deg)
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100px;
+    background: var(--color-accent);
+    transform: skewY(-3.5deg)
 }
 
 .project-container {
-    width:100%;
-    height:100%;
-    padding-top:20px;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    display:flex;
-    -webkit-box-direction:normal;
-    -moz-box-direction:normal;
-    -webkit-box-orient:horizontal;
-    -moz-box-orient:horizontal;
-    -webkit-flex-direction:row;
-    -ms-flex-direction:row;
-    flex-direction:row;
-    -webkit-flex-wrap:wrap;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    -webkit-box-pack:justify;
-    -moz-box-pack:justify;
-    -webkit-justify-content:space-around;
-    justify-content:space-around;
-    -webkit-align-content:flex-start;
-    -ms-flex-line-pack:start;
-    align-content:flex-start;
-    -webkit-box-align:start;
-    -moz-box-align:start;
-    -webkit-align-items:flex-start;
-    -ms-flex-align:start;
-    align-items:flex-start
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .flip-container {
-    position:relative;
-    margin:10px 5px;
-    width:35%;
-    min-width:200px;
-    max-width:300px;
-    min-height:120px;
-    perspective:1000px
+    position: relative;
+    margin: 10px 5px;
+    width: 35%;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 120px;
+    perspective: 1000px
 }
 
 .flip-container:hover .project {
-    transform:rotateY(180deg);
-    -webkit-transform:rotateY(180deg)
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg)
 }
 
 .project {
-    transition:.6s;
-    transform-style:preserve-3d;
-    min-height:inherit;
-    box-shadow:0 3px 15px rgba(0,0,0,.1)
+    transition: .6s;
+    transform-style: preserve-3d;
+    min-height: inherit;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .1)
 }
 
-#projects p{
+#projects p {
     padding-top: 20px;
 }
 
-.front,.back {
-    color:var(--color-dark);
-    width:100%;
-    height:100%;
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-    background-color:var(--color-white);
-    position:absolute;
-    top:0;
-    left:0
+.front, .back {
+    color: var(--color-dark);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 0
 }
 
 .front {
-    z-index:2;
-    transform:rotateY(0deg)
+    z-index: 2;
+    transform: rotateY(0deg)
 }
 
 .back {
-    font-size:25pt;
-    transform:rotateY(180deg)
+    font-size: 25pt;
+    transform: rotateY(180deg)
 }
 
 .title {
-    padding-top:10px
+    padding-top: 10px
 }
 
 .icon-link .fa {
-    vertical-align:middle;
-    line-height:120px;
-    font-size:36px;
-    color:#444;
-    transition:color 150ms ease-in-out,font-size .2s ease-in-out
+    vertical-align: middle;
+    line-height: 120px;
+    font-size: 36px;
+    color: #444;
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out
 }
 
 .icon-link .light {
@@ -280,95 +284,96 @@ h1 {
 }
 
 .icon-link.fill.github:hover .fa-github {
-    color:#737373;
-    font-size:48px
+    color: #737373;
+    font-size: 48px
 }
 
 .icon-link.fill.github:hover .light {
     color: var(--color-light);
-    font-size:40px
+    font-size: 40px
 }
 
 .live {
-    text-decoration:none;
-    color:var(--color-dark);
-    transition:color 150ms ease-in-out,font-size .2s ease-in-out
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: color 150ms ease-in-out, font-size .2s ease-in-out
 }
 
 .live:hover {
-    color:#737373;
-    font-size:34px
+    color: #737373;
+    font-size: 34px
 }
 
 .inset {
-    padding:8px 10px 10px;
-    font-size:12pt
+    padding: 8px 10px 10px;
+    font-size: 12pt
 }
 
 @media (min-width: 1024px) {
     #cover h1 p {
-        font-size:42px;
-        font-weight:400
+        font-size: 42px;
+        font-weight: 400
     }
 
     #cover h1 strong {
-        font-size:46px
+        font-size: 46px
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #cover h1 p {
-        font-size:38px;
-        font-weight:400
+        font-size: 38px;
+        font-weight: 400
     }
 
     #cover h1 strong {
-        font-size:42px
+        font-size: 42px
     }
 
     #about p {
-        font-size:1em
+        font-size: 1em
     }
+
     .flip-container {
-        width:100%
+        width: 100%
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     #cover h1 p {
-        font-size:30px;
-        font-weight:400
+        font-size: 30px;
+        font-weight: 400
     }
 
     #cover h1 strong {
-        font-size:34px
+        font-size: 34px
     }
 
     #contact button {
-        font-size:.7em
+        font-size: .7em
     }
 
     #contact p {
-        font-size:.7em
+        font-size: .7em
     }
 
     .flip-container {
-        width:100%
+        width: 100%
     }
 
     #about p {
-        font-size:.9em
+        font-size: .9em;
     }
 }
 
 footer {
-    position:relative;
-    bottom:0;
-    width:100%;
-    height:100px
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px
 }
 
 .regular {
-    padding-top:25px;
-    font-size:16pt
+    padding-top: 25px;
+    font-size: 16pt
 }
