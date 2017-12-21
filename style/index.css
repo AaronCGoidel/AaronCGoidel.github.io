@@ -329,6 +329,9 @@ h1 {
     #about p {
         font-size:1em
     }
+    .flip-container {
+        width:100%
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
