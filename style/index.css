@@ -380,12 +380,13 @@ footer {
 
 .contact {
     padding: 10px;
-    min-height: 20vh;
+    min-height: 10vh;
     color: var(--color-white);
     background-color: var(--color-dark);
 }
 
 .contact a{
+    line-height: 30px;
     font-size: 16px;
     color: var(--color-white);
     text-decoration: underline;
