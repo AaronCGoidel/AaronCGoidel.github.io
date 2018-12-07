@@ -1,3 +1,4 @@
-# What to ignore
-
+.cache/
 .idea/
+node_modules/
+package-lock.json
